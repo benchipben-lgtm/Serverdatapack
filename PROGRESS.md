@@ -23,7 +23,7 @@ This file tracks what has been added, what is being worked on, and what still ne
 
 ## Vein miner — technical investigation
 
-<badge>Not implemented</badge>
+**Status: NOT IMPLEMENTED**
 
 The requested behavior is defined:
 
