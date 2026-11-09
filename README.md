@@ -4,7 +4,7 @@ A datapack for an Aternos Java server.
 
 ## Changes
 - Diamond ore generation reduced (target: about 60% fewer than vanilla).
-- Ancient debris generation increased (target: about 3x vanilla attempts).
+- Ancient debris generation increased: 6 placement attempts, concentrated between Y=8 and Y=26, with large-feature size raised to 6. Actual vein block counts can still vary and are not guaranteed to be exactly 2–6.
 - Small Nether lava springs reduced; lava lakes are unchanged.
 - Adds a shaped Trident recipe.
 
