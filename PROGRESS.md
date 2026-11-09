@@ -8,6 +8,7 @@ This file tracks what has been added, what is being worked on, and what still ne
 
 - [x] Initial datapack structure and README.
 - [x] Custom ore-generation changes added to the datapack.
+- [x] Ancient debris large-vein feature size raised to 6; placement attempts increased from 3 to 6, with height range extended to Y=26.
 - [x] Trident crafting recipe using a Tide Armor Trim template.
 - [x] Heavy Core crafting recipe:
   ```
@@ -41,7 +42,7 @@ A separate Minecraft Java 26.3 datapack, [VeinBreaker by lays24mc](https://www.c
 
 - [ ] Confirm the current custom datapack's pack metadata is correct for Java 26.3.
 - [ ] Test every custom recipe in-game.
-- [ ] Test ore generation in newly generated chunks.
+- [ ] Test ore generation in newly generated chunks, including ancient debris vein counts and Y-level distribution.
 - [x] Add companion-pack installation guide and link to the official 26.3 release.
 - [ ] Upload/install the VeinBreaker ZIP on Aternos and verify exact ore matching.
 - [ ] Verify tree felling requires an axe.
@@ -51,5 +52,5 @@ A separate Minecraft Java 26.3 datapack, [VeinBreaker by lays24mc](https://www.c
 ## Notes
 
 - World-generation changes affect newly generated chunks, not chunks that already exist.
-- Ore-generation adjustments are intended settings and have not been confirmed by measured in-game generation tests.
+- Ore-generation adjustments are intended settings and have not been confirmed by measured in-game generation tests. Vanilla ore-feature size is a maximum placement size, not a guaranteed exact block count, so individual ancient-debris veins may still contain fewer than 2 blocks.
 - This report distinguishes features present in this repository from separate datapacks that have only been identified as compatible candidates.
