@@ -23,7 +23,7 @@ This file tracks what has been added, what is being worked on, and what still ne
 
 ## Vein miner — solution identified
 
-**Status: COMPATIBLE SOLUTION FOUND — NOT YET ADDED TO THIS REPOSITORY**
+**Status: INSTALLATION GUIDE ADDED — COMPANION ZIP STILL NEEDS SERVER INSTALLATION**
 
 A separate Minecraft Java 26.3 datapack, [VeinBreaker by lays24mc](https://www.curseforge.com/minecraft/data-packs/veinbreaker), advertises the requested mechanics:
 
@@ -35,14 +35,15 @@ A separate Minecraft Java 26.3 datapack, [VeinBreaker by lays24mc](https://www.c
 
 **Server software decision:** Keep the server on Vanilla Java 26.3. A plugin server is not necessary for this solution.
 
-**Integration status:** The external datapack has not been merged into this repository. It must be installed as its own datapack alongside this one unless its files are deliberately merged and checked for namespace/function conflicts. Do not mark vein mining complete until that integration and an in-game test are done.
+**Integration status:** Added `VEIN_MINER.md` with the official 26.3 release link and Aternos installation steps, and updated the README. The companion ZIP itself is not bundled in this repository; upload it separately into the same world's `datapacks` folder. Do not mark vein mining complete until it is enabled and tested in-game.
 
 ## Not yet verified
 
 - [ ] Confirm the current custom datapack's pack metadata is correct for Java 26.3.
 - [ ] Test every custom recipe in-game.
 - [ ] Test ore generation in newly generated chunks.
-- [ ] Add or install VeinBreaker and verify exact ore matching.
+- [x] Add companion-pack installation guide and link to the official 26.3 release.
+- [ ] Upload/install the VeinBreaker ZIP on Aternos and verify exact ore matching.
 - [ ] Verify tree felling requires an axe.
 - [ ] Verify the chain limit and tool durability behavior in-game.
 - [ ] Confirm all datapacks load without errors on Aternos.
