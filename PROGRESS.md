@@ -21,35 +21,34 @@ This file tracks what has been added, what is being worked on, and what still ne
   - D = Diamond Block
   - Output = 1 Heavy Core
 
-## Vein miner — technical investigation
+## Vein miner — solution identified
 
-**Status: NOT IMPLEMENTED**
+**Status: COMPATIBLE SOLUTION FOUND — NOT YET ADDED TO THIS REPOSITORY**
 
-The requested behavior is defined:
+A separate Minecraft Java 26.3 datapack, [VeinBreaker by lays24mc](https://www.curseforge.com/minecraft/data-packs/veinbreaker), advertises the requested mechanics:
 
-- Ore chains must include only connected blocks of the exact same ore type.
-- Adjacent, different ore types must never be included.
-- Connected tree logs should chain only when the player is holding an axe.
-- Chain mining needs a reasonable block cap.
+- Connected ore veins are mined by same ore type.
+- Tree felling activates when using an axe.
+- Fortune, Silk Touch, Unbreaking, and tool durability are supported.
+- Players can toggle tree felling and ore vein mining independently with trigger commands.
+- The 1.1 release notes a 256-block reach; earlier release listed a 32-block limit.
 
-**Implementation blocker:** a normal Java datapack advancement can detect that a player mined a block and run a reward function, but that function runs at the player's position. The advancement reward does not pass the mined block's coordinates into the function. Without the starting block position, a function-only datapack cannot reliably flood-fill the exact connected vein or tree. A rough scan around the player would be unreliable and could mine the wrong blocks, so it is not being added as if it were a proper vein miner.
+**Server software decision:** Keep the server on Vanilla Java 26.3. A plugin server is not necessary for this solution.
 
-References:
-- [Minecraft Wiki — Advancement definition](https://minecraft.wiki/w/Advancement_definition)
-- [Minecraft Data Packs Guide — advancement reward functions](https://maybenotconnor.github.io/minecraft-data-packs-guide/ch19.html)
-
-**Next step:** confirm the Aternos server software. If it supports a compatible server-side extension, the exact behavior can be implemented there; otherwise, we should choose a different approach rather than ship a broken datapack workaround.
+**Integration status:** The external datapack has not been merged into this repository. It must be installed as its own datapack alongside this one unless its files are deliberately merged and checked for namespace/function conflicts. Do not mark vein mining complete until that integration and an in-game test are done.
 
 ## Not yet verified
 
-- [ ] Confirm datapack compatibility with the target Minecraft server version (26.3).
+- [ ] Confirm the current custom datapack's pack metadata is correct for Java 26.3.
 - [ ] Test every custom recipe in-game.
 - [ ] Test ore generation in newly generated chunks.
-- [ ] Implement and test vein mining using a suitable server-side approach.
-- [ ] Confirm the datapack loads without errors on the Aternos server.
+- [ ] Add or install VeinBreaker and verify exact ore matching.
+- [ ] Verify tree felling requires an axe.
+- [ ] Verify the chain limit and tool durability behavior in-game.
+- [ ] Confirm all datapacks load without errors on Aternos.
 
 ## Notes
 
 - World-generation changes affect newly generated chunks, not chunks that already exist.
 - Ore-generation adjustments are intended settings and have not been confirmed by measured in-game generation tests.
-- This report will be updated as features are implemented and tested.
+- This report distinguishes features present in this repository from separate datapacks that have only been identified as compatible candidates.
