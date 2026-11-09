@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " E ",
+    "INI",
+    " D "
+  ],
+  "key": {
+    "E": { "item": "minecraft:ender_eye" },
+    "I": { "item": "minecraft:iron_block" },
+    "N": { "item": "minecraft:netherite_block" },
+    "D": { "item": "minecraft:diamond_block" }
+  },
+  "result": {
+    "id": "minecraft:heavy_core",
+    "count": 1
+  }
+}
