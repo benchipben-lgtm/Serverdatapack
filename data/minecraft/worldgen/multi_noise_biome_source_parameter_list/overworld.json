@@ -361,7 +361,7 @@
       }
     },
     {
-      "biome": "minecraft:mountains",
+      "biome": "minecraft:windswept_hills",
       "parameters": {
         "temperature": [
           -1,
