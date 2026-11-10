@@ -6,10 +6,10 @@
     " P "
   ],
   "key": {
-    "S": { "item": "minecraft:prismarine_shard" },
-    "D": { "item": "minecraft:diamond_block" },
-    "T": { "item": "minecraft:tide_armor_trim_smithing_template" },
-    "P": { "item": "minecraft:sponge" }
+    "S": "minecraft:prismarine_shard",
+    "D": "minecraft:diamond_block",
+    "T": "minecraft:tide_armor_trim_smithing_template",
+    "P": "minecraft:sponge"
   },
   "result": {
     "id": "minecraft:trident",
