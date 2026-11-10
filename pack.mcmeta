@@ -1,13 +1,13 @@
 {
   "pack": {
-    "description": "Ore Tweaks: rarer diamonds, more ancient debris, fewer Nether lava springs (Java 26.1)",
+    "description": "Ore Tweaks: rarer diamonds, more ancient debris, fewer Nether lava springs (Java 26.3)",
     "min_format": [
-      101,
-      1
+      121,
+      0
     ],
     "max_format": [
-      101,
-      1
+      121,
+      0
     ]
   }
 }
