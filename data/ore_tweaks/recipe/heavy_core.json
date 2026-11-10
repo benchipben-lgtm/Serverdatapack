@@ -6,10 +6,10 @@
     " D "
   ],
   "key": {
-    "E": { "item": "minecraft:ender_eye" },
-    "I": { "item": "minecraft:iron_block" },
-    "N": { "item": "minecraft:netherite_block" },
-    "D": { "item": "minecraft:diamond_block" }
+    "E": "minecraft:ender_eye",
+    "I": "minecraft:iron_block",
+    "N": "minecraft:netherite_block",
+    "D": "minecraft:diamond_block"
   },
   "result": {
     "id": "minecraft:heavy_core",
