@@ -1,19 +1,39 @@
 {
   "type": "minecraft:range_choice",
   "input": "minecraft:y",
-  "min_inclusive": -54,
-  "max_exclusive": -10,
+  "min_inclusive": -59,
+  "max_exclusive": 1000000,
   "when_in_range": {
     "type": "minecraft:range_choice",
     "input": {
-      "type": "minecraft:noise",
-      "noise": "minecraft:cave_cheese",
-      "xz_scale": 0.3,
-      "y_scale": 0.3
+      "type": "minecraft:add",
+      "left": "minecraft:y",
+      "right": {
+        "type": "minecraft:mul",
+        "left": {
+          "type": "minecraft:noise",
+          "noise": "minecraft:cave_cheese",
+          "xz_scale": 0.025,
+          "y_scale": 0.025
+        },
+        "right": 8
+      }
     },
-    "min_inclusive": -0.15,
-    "max_exclusive": 1000000,
-    "when_in_range": -1,
+    "min_inclusive": -1000000,
+    "max_exclusive": -10,
+    "when_in_range": {
+      "type": "minecraft:range_choice",
+      "input": {
+        "type": "minecraft:noise",
+        "noise": "minecraft:cave_cheese",
+        "xz_scale": 0.3,
+        "y_scale": 0.3
+      },
+      "min_inclusive": -0.15,
+      "max_exclusive": 1000000,
+      "when_in_range": -1,
+      "when_out_of_range": "ore_tweaks:base_final_density"
+    },
     "when_out_of_range": "ore_tweaks:base_final_density"
   },
   "when_out_of_range": "ore_tweaks:base_final_density"
