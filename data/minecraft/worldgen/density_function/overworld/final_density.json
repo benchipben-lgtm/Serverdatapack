@@ -1,31 +1,11 @@
 {
-  "type": "minecraft:range_choice",
-  "input": "minecraft:y",
-  "min_inclusive": -59,
-  "max_exclusive": 1000000,
-  "when_in_range": {
+  "type": "minecraft:add",
+  "left": {
     "type": "minecraft:range_choice",
-    "input": {
-      "type": "minecraft:add",
-      "left": "minecraft:y",
-      "right": {
-        "type": "minecraft:add",
-        "left": {
-          "type": "minecraft:mul",
-          "left": "minecraft:overworld/continents",
-          "right": 2
-        },
-        "right": {
-          "type": "minecraft:mul",
-          "left": "minecraft:overworld/erosion",
-          "right": 2
-        }
-      }
-    },
-    "min_inclusive": -1000000,
-    "max_exclusive": -50,
-    "when_in_range": 1,
-    "when_out_of_range": {
+    "input": "minecraft:y",
+    "min_inclusive": -59,
+    "max_exclusive": 1000000,
+    "when_in_range": {
       "type": "minecraft:range_choice",
       "input": {
         "type": "minecraft:add",
@@ -35,32 +15,121 @@
           "left": {
             "type": "minecraft:mul",
             "left": "minecraft:overworld/continents",
-            "right": 7
+            "right": 1.5
           },
           "right": {
             "type": "minecraft:mul",
             "left": "minecraft:overworld/erosion",
-            "right": 6
+            "right": 1.5
           }
         }
       },
       "min_inclusive": -1000000,
-      "max_exclusive": -10,
-      "when_in_range": {
+      "max_exclusive": -46,
+      "when_in_range": 1,
+      "when_out_of_range": {
         "type": "minecraft:range_choice",
         "input": {
-          "type": "minecraft:noise",
-          "noise": "minecraft:cave_cheese",
-          "xz_scale": 0.3,
-          "y_scale": 0.3
+          "type": "minecraft:add",
+          "left": "minecraft:y",
+          "right": {
+            "type": "minecraft:add",
+            "left": {
+              "type": "minecraft:mul",
+              "left": "minecraft:overworld/continents",
+              "right": 8
+            },
+            "right": {
+              "type": "minecraft:mul",
+              "left": "minecraft:overworld/erosion",
+              "right": 6
+            }
+          }
         },
-        "min_inclusive": -0.15,
-        "max_exclusive": 1000000,
-        "when_in_range": -1,
+        "min_inclusive": -1000000,
+        "max_exclusive": -10,
+        "when_in_range": {
+          "type": "minecraft:max",
+          "left": {
+            "type": "minecraft:max",
+            "left": {
+              "type": "minecraft:range_choice",
+              "input": {
+                "type": "minecraft:noise",
+                "noise": "minecraft:cave_cheese",
+                "xz_scale": 0.3,
+                "y_scale": 0.3
+              },
+              "min_inclusive": -0.15,
+              "max_exclusive": 1000000,
+              "when_in_range": -1,
+              "when_out_of_range": "ore_tweaks:base_final_density"
+            },
+            "right": {
+              "type": "minecraft:range_choice",
+              "input": {
+                "type": "minecraft:noise",
+                "noise": "ore_tweaks:cavern_walls",
+                "xz_scale": 0.006,
+                "y_scale": 0.012
+              },
+              "min_inclusive": -1000000,
+              "max_exclusive": 0.64,
+              "when_in_range": -1,
+              "when_out_of_range": 1
+            }
+          },
+          "right": {
+            "type": "minecraft:range_choice",
+            "input": "minecraft:y",
+            "min_inclusive": -46,
+            "max_exclusive": -22,
+            "when_in_range": {
+              "type": "minecraft:min",
+              "left": {
+                "type": "minecraft:range_choice",
+                "input": {
+                  "type": "minecraft:noise",
+                  "noise": "ore_tweaks:plateau_map",
+                  "xz_scale": 0.008,
+                  "y_scale": 0
+                },
+                "min_inclusive": -1000000,
+                "max_exclusive": 0.78,
+                "when_in_range": -1,
+                "when_out_of_range": 1
+              },
+              "right": {
+                "type": "minecraft:range_choice",
+                "input": {
+                  "type": "minecraft:add",
+                  "left": "minecraft:y",
+                  "right": {
+                    "type": "minecraft:mul",
+                    "left": {
+                      "type": "minecraft:noise",
+                      "noise": "ore_tweaks:plateau_map",
+                      "xz_scale": 0.008,
+                      "y_scale": 0
+                    },
+                    "right": 2
+                  }
+                },
+                "min_inclusive": -1000000,
+                "max_exclusive": -25,
+                "when_in_range": 1,
+                "when_out_of_range": -1
+              }
+            },
+            "when_out_of_range": -1
+          }
+        },
         "when_out_of_range": "ore_tweaks:base_final_density"
-      },
-      "when_out_of_range": "ore_tweaks:base_final_density"
-    }
+      }
+    },
+    "when_out_of_range": "ore_tweaks:base_final_density"
   },
-  "when_out_of_range": "ore_tweaks:base_final_density"
+  "right": {
+    "type": "minecraft:beardifier"
+  }
 }
