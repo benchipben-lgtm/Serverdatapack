@@ -97,7 +97,7 @@
                     "type": "minecraft:mul",
                     "left": {
                       "type": "minecraft:add",
-                      "left": -10,
+                      "left": -4,
                       "right": {
                         "type": "minecraft:mul",
                         "left": {
@@ -106,7 +106,7 @@
                           "xz_scale": 0.04,
                           "y_scale": 0
                         },
-                        "right": 3
+                        "right": 2.5
                       }
                     },
                     "right": -1
