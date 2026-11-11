@@ -4,11 +4,14 @@ This pack targets Java 26.3 (data pack format 121.0). Install the folder contain
 
 ## Overworld
 
-- The custom cavern system begins above the bedrock region. Its lower boundary is now a noise-shaped solid floor around Y=-50, intended to keep the usual Y=-54 lava layer beneath the playable cavern.
-- The cavern roof is shaped by broad Overworld noise fields instead of a single flat Y=-10 cutoff. Its height varies by location and can extend somewhat above Y=-10.
-- Aquifers are excluded from the custom cavern band through Y=15 so the hollow area should remain dry.
-- Ancient Cities use 12-chunk placement spacing, are allowed in Overworld biomes, and now start at Y=-27 with dimension padding to keep pieces away from the world bottom.
-- Trial Chambers now use the same 12-chunk spacing and 1-chunk separation as Ancient Cities, giving them the same placement-grid frequency. Their biome eligibility still differs.
+- The cavern floor is shaped around Y=-46 with broad natural variation, leaving a solid buffer above the usual Y=-54 lava layer.
+- The roof uses a separate broad terrain-noise boundary around Y=-10, with several-block height variation rather than a flat cutoff.
+- Aquifer exclusion follows the same floor/roof boundaries and is positive only inside the intended cavern volume.
+- Large 3D noise formations add occasional broad cave walls and solid sections.
+- A separate low-frequency noise mask adds rare broad plateaus roughly 20 blocks tall, with irregular edges.
+- The 26.3 beardifier is applied once at the final density root so structure terrain adaptation also affects the custom cavern branch.
+- Ancient Cities use 12-chunk placement spacing, are allowed in Overworld biomes, start at Y=-27, and have bottom dimension padding to protect bedrock.
+- Trial Chambers use the same 12-chunk spacing and 1-chunk separation as Ancient Cities. Their full vanilla pool aliases and other structure settings are retained; their start-height range is raised to Y=-30 through -18.
 - Villages use 23-chunk spacing.
 - Monster rooms and deep monster rooms are increased to 22 and 9 placement attempts respectively.
 - Amethyst geodes use rarity 11 instead of vanilla rarity 24.
@@ -29,7 +32,7 @@ This pack targets Java 26.3 (data pack format 121.0). Install the folder contain
 
 ## Known limitations
 
-- Deep Dark biome frequency itself remains vanilla. The pack instead allows Ancient Cities across Overworld biomes.
-- Large circular plateaus and giant internal cave walls are not implemented yet; they are a separate terrain-shaping pass after the floor, roof, fluid, and structure-height fixes are tested.
+- Deep Dark biome frequency itself remains vanilla. Ancient Cities are allowed in all Overworld biomes.
+- Circularity of the plateaus and the visual density of walls depend on the noise field and need an in-game worldgen check.
 - Silk Touch spawner drops and truly unbreakable Blaze spawners are not implemented in this datapack yet.
-- JSON syntax checks do not replace loading the pack in a Minecraft 26.3 server. This revision has not been runtime-tested in Minecraft.
+- JSON syntax and registry references can be statically checked, but the pack has not yet been loaded by a Minecraft 26.3 server in this environment.
