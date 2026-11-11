@@ -11,7 +11,7 @@ This pack targets Java 26.3 (data pack format 121.0). Install the folder contain
 - A separate low-frequency noise mask adds rare broad plateaus roughly 20 blocks tall, with irregular edges.
 - The 26.3 beardifier is applied once at the final density root so structure terrain adaptation also affects the custom cavern branch.
 - Ancient Cities use 12-chunk placement spacing, are allowed in Overworld biomes, start at Y=-27, and have bottom dimension padding to protect bedrock.
-- Trial Chambers use the same 12-chunk spacing and 1-chunk separation as Ancient Cities. Their full vanilla pool aliases and other structure settings are retained; their start-height range is raised to Y=-30 through -18.
+- Trial Chambers use the same 12-chunk spacing, 1-chunk separation, and Overworld biome eligibility as Ancient Cities. Their full vanilla pool aliases and other structure settings are retained; their start-height range is raised to Y=-30 through -18.
 - Villages use 23-chunk spacing.
 - Monster rooms and deep monster rooms are increased to 22 and 9 placement attempts respectively.
 - Amethyst geodes use rarity 11 instead of vanilla rarity 24.
