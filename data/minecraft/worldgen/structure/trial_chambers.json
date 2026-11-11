@@ -1,6 +1,6 @@
 {
   "type": "minecraft:jigsaw",
-  "biomes": "#minecraft:has_structure/trial_chambers",
+  "biomes": "#minecraft:is_overworld",
   "dimension_padding": {
     "bottom": 16,
     "top": 0
