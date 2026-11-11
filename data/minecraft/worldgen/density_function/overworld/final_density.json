@@ -13,14 +13,27 @@
         "right": {
           "type": "minecraft:add",
           "left": {
-            "type": "minecraft:mul",
-            "left": "minecraft:overworld/continents",
-            "right": 1.5
+            "type": "minecraft:add",
+            "left": {
+              "type": "minecraft:mul",
+              "left": "minecraft:overworld/continents",
+              "right": 1
+            },
+            "right": {
+              "type": "minecraft:mul",
+              "left": "minecraft:overworld/erosion",
+              "right": 1
+            }
           },
           "right": {
             "type": "minecraft:mul",
-            "left": "minecraft:overworld/erosion",
-            "right": 1.5
+            "left": {
+              "type": "minecraft:noise",
+              "noise": "ore_tweaks:plateau_map",
+              "xz_scale": 0.025,
+              "y_scale": 0
+            },
+            "right": 3.5
           }
         }
       },
@@ -35,19 +48,32 @@
           "right": {
             "type": "minecraft:add",
             "left": {
-              "type": "minecraft:mul",
-              "left": "minecraft:overworld/continents",
-              "right": 8
+              "type": "minecraft:add",
+              "left": {
+                "type": "minecraft:mul",
+                "left": "minecraft:overworld/continents",
+                "right": 1.5
+              },
+              "right": {
+                "type": "minecraft:mul",
+                "left": "minecraft:overworld/erosion",
+                "right": 1.5
+              }
             },
             "right": {
               "type": "minecraft:mul",
-              "left": "minecraft:overworld/erosion",
-              "right": 6
+              "left": {
+                "type": "minecraft:noise",
+                "noise": "ore_tweaks:cavern_walls",
+                "xz_scale": 0.02,
+                "y_scale": 0
+              },
+              "right": 3
             }
           }
         },
         "min_inclusive": -1000000,
-        "max_exclusive": -10,
+        "max_exclusive": 15,
         "when_in_range": {
           "type": "minecraft:max",
           "left": {
