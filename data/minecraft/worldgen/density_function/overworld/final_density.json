@@ -49,10 +49,10 @@
               "left": {
                 "type": "minecraft:noise",
                 "noise": "ore_tweaks:cavern_walls",
-                "xz_scale": 0.02,
+                "xz_scale": 0.012,
                 "y_scale": 0
               },
-              "right": 3
+              "right": 12
             }
           }
         },
