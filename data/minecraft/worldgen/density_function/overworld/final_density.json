@@ -17,12 +17,12 @@
             "left": {
               "type": "minecraft:mul",
               "left": "minecraft:overworld/continents",
-              "right": 0.5
+              "right": 1
             },
             "right": {
               "type": "minecraft:mul",
               "left": "minecraft:overworld/erosion",
-              "right": 0.5
+              "right": 1
             }
           },
           "right": {
@@ -30,10 +30,10 @@
             "left": {
               "type": "minecraft:noise",
               "noise": "ore_tweaks:plateau_map",
-              "xz_scale": 0.035,
+              "xz_scale": 0.02,
               "y_scale": 0
             },
-            "right": 5
+            "right": 10
           }
         }
       },
@@ -96,11 +96,11 @@
               "input": {
                 "type": "minecraft:noise",
                 "noise": "ore_tweaks:cavern_walls",
-                "xz_scale": 0.035,
-                "y_scale": 0.025
+                "xz_scale": 0.025,
+                "y_scale": 0
               },
               "min_inclusive": -1000000,
-              "max_exclusive": 0.52,
+              "max_exclusive": 0.1,
               "when_in_range": -1,
               "when_out_of_range": 1
             }
@@ -117,11 +117,11 @@
                 "input": {
                   "type": "minecraft:noise",
                   "noise": "ore_tweaks:plateau_map",
-                  "xz_scale": 0.07,
+                  "xz_scale": 0.025,
                   "y_scale": 0
                 },
                 "min_inclusive": -1000000,
-                "max_exclusive": 0.76,
+                "max_exclusive": 0.45,
                 "when_in_range": -1,
                 "when_out_of_range": 1
               },
@@ -135,7 +135,7 @@
                     "left": {
                       "type": "minecraft:noise",
                       "noise": "ore_tweaks:plateau_map",
-                      "xz_scale": 0.07,
+                      "xz_scale": 0.025,
                       "y_scale": 0
                     },
                     "right": 2
