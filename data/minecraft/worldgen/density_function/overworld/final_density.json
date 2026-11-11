@@ -15,10 +15,10 @@
           "left": {
             "type": "minecraft:noise",
             "noise": "ore_tweaks:plateau_map",
-            "xz_scale": 0.02,
+            "xz_scale": 0.06,
             "y_scale": 0
           },
-          "right": 12
+          "right": 18
         }
       },
       "min_inclusive": -1000000,
