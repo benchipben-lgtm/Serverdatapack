@@ -18,12 +18,12 @@
             "left": {
               "type": "minecraft:mul",
               "left": "minecraft:overworld/continents",
-              "right": 0.5
+              "right": 1
             },
             "right": {
               "type": "minecraft:mul",
               "left": "minecraft:overworld/erosion",
-              "right": 0.5
+              "right": 1
             }
           },
           "right": {
@@ -31,10 +31,10 @@
             "left": {
               "type": "minecraft:noise",
               "noise": "ore_tweaks:plateau_map",
-              "xz_scale": 0.035,
+              "xz_scale": 0.02,
               "y_scale": 0
             },
-            "right": 5
+            "right": 10
           }
         }
       },
