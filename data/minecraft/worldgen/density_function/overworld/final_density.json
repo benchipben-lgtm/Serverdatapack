@@ -15,7 +15,7 @@
           "left": {
             "type": "minecraft:noise",
             "noise": "ore_tweaks:plateau_map",
-            "xz_scale": 0.045,
+            "xz_scale": 0.09,
             "y_scale": 0
           },
           "right": 3
@@ -73,7 +73,7 @@
               "min_inclusive": -0.15,
               "max_exclusive": 1000000,
               "when_in_range": -1,
-              "when_out_of_range": "ore_tweaks:base_final_density"
+              "when_out_of_range": -1
             },
             "right": {
               "type": "minecraft:range_choice",
