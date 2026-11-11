@@ -7,8 +7,8 @@ This pack targets Java 26.3 (data pack format 121.0). Install the folder contain
 - The cavern floor is a mostly level, plains-like surface centered near Y=-46, with smooth rolling height changes of several blocks from low-frequency noise and subtle continental/erosion variation. Aquifer exclusion follows the same floor shape; the floor is intended to stay above the usual Y=-54 lava layer.
 - The cavern roof boundary is centered near Y=15, with broad terrain-noise variation targeting roughly Y=9–21 rather than a flat cutoff.
 - Aquifer exclusion follows the same irregular floor and roof boundaries and is positive only inside the intended cavern volume.
-- Large 3D noise formations add occasional broad cave walls and solid sections.
-- A separate low-frequency noise mask adds rare broad plateaus roughly 20 blocks tall, with irregular edges.
+- Broad 3D noise formations add irregular, mostly vertical cave walls that divide parts of the cavern into separate chambers and passages; their threshold is tuned to make the walls more noticeable without filling the whole cavern.
+- A separate low-frequency noise mask adds rare, large plateau formations with irregular edges and uneven tops, rising roughly 18–24 blocks above the cavern floor.
 - The 26.3 beardifier is applied once at the final density root so structure terrain adaptation also affects the custom cavern branch.
 - Ancient Cities use 12-chunk placement spacing, are allowed in Overworld biomes, and start at Y=-27. Their structure definition follows the Java 26.3 vanilla schema (no unsupported `dimension_padding` field).
 - Trial Chambers use the same 12-chunk spacing, 1-chunk separation, and Overworld biome eligibility as Ancient Cities. Their full vanilla pool aliases and other structure settings are retained; their start-height range is raised to Y=-30 through -18, with 16-block dimension padding.
