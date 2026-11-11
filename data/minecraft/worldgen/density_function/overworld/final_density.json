@@ -15,10 +15,10 @@
           "left": {
             "type": "minecraft:noise",
             "noise": "ore_tweaks:plateau_map",
-            "xz_scale": 0.09,
+            "xz_scale": 0.035,
             "y_scale": 0
           },
-          "right": 3
+          "right": 5
         }
       },
       "min_inclusive": -1000000,
@@ -78,74 +78,15 @@
             "right": {
               "type": "minecraft:range_choice",
               "input": {
-                "type": "minecraft:abs",
-                "input": {
-                  "type": "minecraft:noise",
-                  "noise": "ore_tweaks:cavern_walls",
-                  "xz_scale": 0.025,
-                  "y_scale": 0
-                }
+                "type": "minecraft:noise",
+                "noise": "ore_tweaks:cavern_walls",
+                "xz_scale": 0.035,
+                "y_scale": 0.025
               },
-              "min_inclusive": 0,
-              "max_exclusive": 0.055,
-              "when_in_range": {
-                "type": "minecraft:range_choice",
-                "input": {
-                  "type": "minecraft:add",
-                  "left": "minecraft:y",
-                  "right": {
-                    "type": "minecraft:mul",
-                    "left": {
-                      "type": "minecraft:add",
-                      "left": -4,
-                      "right": {
-                        "type": "minecraft:mul",
-                        "left": {
-                          "type": "minecraft:noise",
-                          "noise": "ore_tweaks:cavern_walls",
-                          "xz_scale": 0.04,
-                          "y_scale": 0
-                        },
-                        "right": 2.5
-                      }
-                    },
-                    "right": -1
-                  }
-                },
-                "min_inclusive": 0,
-                "max_exclusive": 1000000,
-                "when_in_range": {
-                  "type": "minecraft:range_choice",
-                  "input": {
-                    "type": "minecraft:add",
-                    "left": "minecraft:y",
-                    "right": {
-                      "type": "minecraft:mul",
-                      "left": {
-                        "type": "minecraft:add",
-                        "left": 12,
-                        "right": {
-                          "type": "minecraft:mul",
-                          "left": {
-                            "type": "minecraft:noise",
-                            "noise": "ore_tweaks:cavern_walls",
-                            "xz_scale": 0.04,
-                            "y_scale": 0
-                          },
-                          "right": 2
-                        }
-                      },
-                      "right": -1
-                    }
-                  },
-                  "min_inclusive": -1000000,
-                  "max_exclusive": 0,
-                  "when_in_range": 1,
-                  "when_out_of_range": -1
-                },
-                "when_out_of_range": -1
-              },
-              "when_out_of_range": -1
+              "min_inclusive": -1000000,
+              "max_exclusive": 0.52,
+              "when_in_range": -1,
+              "when_out_of_range": 1
             }
           },
           "right": {
@@ -195,10 +136,10 @@
                         "left": {
                           "type": "minecraft:noise",
                           "noise": "ore_tweaks:plateau_map",
-                          "xz_scale": 0.045,
+                          "xz_scale": 0.035,
                           "y_scale": 0
                         },
-                        "right": 3
+                        "right": 5
                       }
                     },
                     "right": 46
@@ -207,7 +148,7 @@
                     "type": "minecraft:mul",
                     "left": {
                       "type": "minecraft:add",
-                      "left": 13,
+                      "left": 10,
                       "right": {
                         "type": "minecraft:mul",
                         "left": {
@@ -216,7 +157,7 @@
                           "xz_scale": 0.03,
                           "y_scale": 0
                         },
-                        "right": 2
+                        "right": 1.5
                       }
                     },
                     "right": -1
