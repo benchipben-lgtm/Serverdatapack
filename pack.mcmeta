@@ -1,7 +1,13 @@
 {
   "pack": {
     "description": "Ore Tweaks: custom Overworld and Nether generation (Java 26.3)",
-    "min_format": [113, 0],
-    "max_format": [113, 0]
+    "min_format": [
+      121,
+      0
+    ],
+    "max_format": [
+      121,
+      0
+    ]
   }
 }
