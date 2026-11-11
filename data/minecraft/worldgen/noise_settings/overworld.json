@@ -12,30 +12,14 @@
         "type": "minecraft:add",
         "left": "minecraft:y",
         "right": {
-          "type": "minecraft:add",
+          "type": "minecraft:mul",
           "left": {
-            "type": "minecraft:add",
-            "left": {
-              "type": "minecraft:mul",
-              "left": "minecraft:overworld/continents",
-              "right": 1
-            },
-            "right": {
-              "type": "minecraft:mul",
-              "left": "minecraft:overworld/erosion",
-              "right": 1
-            }
+            "type": "minecraft:noise",
+            "noise": "ore_tweaks:plateau_map",
+            "xz_scale": 0.045,
+            "y_scale": 0
           },
-          "right": {
-            "type": "minecraft:mul",
-            "left": {
-              "type": "minecraft:noise",
-              "noise": "ore_tweaks:plateau_map",
-              "xz_scale": 0.02,
-              "y_scale": 0
-            },
-            "right": 10
-          }
+          "right": 3
         }
       },
       "min_inclusive": -1000000,
