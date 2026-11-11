@@ -4,11 +4,12 @@ This pack targets Java 26.3 (data pack format 121.0). Install the folder contain
 
 ## Overworld
 
-- A large cavern band is carved from roughly Y=-59 up to an uneven roof around Y=-10.
-- Aquifer fluids are suppressed inside that cavern band so it stays dry; the normal bedrock floor is left intact.
-- Ancient City structures use roughly 12-chunk placement spacing and may start between Y=-52 and Y=-35. They are allowed in all Overworld biomes, rather than only Deep Dark.
+- The custom cavern system begins above the bedrock region. Its lower boundary is now a noise-shaped solid floor around Y=-50, intended to keep the usual Y=-54 lava layer beneath the playable cavern.
+- The cavern roof is shaped by broad Overworld noise fields instead of a single flat Y=-10 cutoff. Its height varies by location and can extend somewhat above Y=-10.
+- Aquifers are excluded from the custom cavern band through Y=15 so the hollow area should remain dry.
+- Ancient Cities use 12-chunk placement spacing, are allowed in Overworld biomes, and now start at Y=-27 with dimension padding to keep pieces away from the world bottom.
+- Trial Chambers now use the same 12-chunk spacing and 1-chunk separation as Ancient Cities, giving them the same placement-grid frequency. Their biome eligibility still differs.
 - Villages use 23-chunk spacing.
-- Trial Chambers use 23-chunk spacing (about 119% more placement density than the vanilla 34-chunk spacing).
 - Monster rooms and deep monster rooms are increased to 22 and 9 placement attempts respectively.
 - Amethyst geodes use rarity 11 instead of vanilla rarity 24.
 - Diamonds use size-9 clusters with a one-in-four-chunks placement chance. Individual clusters can contain fewer than nine blocks because ore replacement rules still apply.
@@ -28,6 +29,7 @@ This pack targets Java 26.3 (data pack format 121.0). Install the folder contain
 
 ## Known limitations
 
-- Deep Dark biome frequency itself remains vanilla. The normal Overworld biome distribution is hardcoded; changing it safely requires a custom world preset with a full replacement climate table. The pack instead allows Ancient Cities across Overworld biomes.
+- Deep Dark biome frequency itself remains vanilla. The pack instead allows Ancient Cities across Overworld biomes.
+- Large circular plateaus and giant internal cave walls are not implemented yet; they are a separate terrain-shaping pass after the floor, roof, fluid, and structure-height fixes are tested.
 - Silk Touch spawner drops and truly unbreakable Blaze spawners are not implemented in this datapack yet.
-- The files have been checked for valid JSON and reviewed against the 26.3 data format, but have not been loaded by a Minecraft 26.3 server in this environment.
+- JSON syntax checks do not replace loading the pack in a Minecraft 26.3 server. This revision has not been runtime-tested in Minecraft.
