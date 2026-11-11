@@ -16,7 +16,7 @@
           "left": {
             "type": "minecraft:noise",
             "noise": "ore_tweaks:plateau_map",
-            "xz_scale": 0.045,
+            "xz_scale": 0.09,
             "y_scale": 0
           },
           "right": 3
