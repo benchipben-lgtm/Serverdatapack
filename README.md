@@ -4,7 +4,7 @@ This pack targets Java 26.3 (data pack format 121.0). Install the folder contain
 
 ## Overworld
 
-- The cavern floor boundary is centered near Y=-46 and uses broad low-frequency noise plus continental and erosion variation; its target range stays above the usual Y=-54 lava layer.
+- The cavern floor is a mostly level, plains-like surface centered near Y=-46, with smooth rolling height changes of several blocks from low-frequency noise and subtle continental/erosion variation. Aquifer exclusion follows the same floor shape; the floor is intended to stay above the usual Y=-54 lava layer.
 - The cavern roof boundary is centered near Y=15, with broad terrain-noise variation targeting roughly Y=9–21 rather than a flat cutoff.
 - Aquifer exclusion follows the same irregular floor and roof boundaries and is positive only inside the intended cavern volume.
 - Large 3D noise formations add occasional broad cave walls and solid sections.
