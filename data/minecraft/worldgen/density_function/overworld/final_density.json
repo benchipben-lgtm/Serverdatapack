@@ -70,8 +70,8 @@
               "input": {
                 "type": "minecraft:noise",
                 "noise": "ore_tweaks:cavern_walls",
-                "xz_scale": 0.006,
-                "y_scale": 0.012
+                "xz_scale": 0.04,
+                "y_scale": 0.08
               },
               "min_inclusive": -1000000,
               "max_exclusive": 0.64,
@@ -91,7 +91,7 @@
                 "input": {
                   "type": "minecraft:noise",
                   "noise": "ore_tweaks:plateau_map",
-                  "xz_scale": 0.008,
+                  "xz_scale": 0.08,
                   "y_scale": 0
                 },
                 "min_inclusive": -1000000,
@@ -109,7 +109,7 @@
                     "left": {
                       "type": "minecraft:noise",
                       "noise": "ore_tweaks:plateau_map",
-                      "xz_scale": 0.008,
+                      "xz_scale": 0.08,
                       "y_scale": 0
                     },
                     "right": 2
