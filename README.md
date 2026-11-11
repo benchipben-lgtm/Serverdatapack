@@ -7,7 +7,7 @@ This pack targets Java 26.3 (data pack format 121.0). Install the folder contain
 - The cavern floor uses a plains-like profile centered near Y=-46, with smooth height variation capped at about 3 blocks above or below the center. Aquifer exclusion follows the same floor shape; the floor is intended to stay above the usual Y=-54 lava layer.
 - The cavern roof boundary is centered near Y=15, with broad terrain-noise variation targeting roughly Y=9–21 rather than a flat cutoff.
 - Aquifer exclusion follows the same irregular floor and roof boundaries and is positive only inside the intended cavern volume.
-- Thin, winding 2D noise contours create vertical cave-wall sheets rather than oval columns. Their lower edges vary around Y=-10 and their upper edges around Y=12, giving both ends a curved, uneven outline while leaving the lower Ancient City band clear.
+- Thin, winding 2D noise contours create vertical cave-wall sheets rather than oval columns. Their lower edges vary around Y=-4 and their upper edges around Y=12, giving both ends a curved, uneven outline while leaving the lower Ancient City band clear.
 - A sparse broad mask creates raised cliff-like plateaus with irregular edges and uneven tops, roughly 11–15 blocks above the rolling floor.
 - The 26.3 beardifier is applied once at the final density root so structure terrain adaptation also affects the custom cavern branch.
 - Ancient Cities use 12-chunk placement spacing, are allowed in Overworld biomes, and start at Y=-27. Their structure definition follows the Java 26.3 vanilla schema (no unsupported `dimension_padding` field).
