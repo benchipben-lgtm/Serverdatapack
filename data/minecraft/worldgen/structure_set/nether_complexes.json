@@ -3,9 +3,10 @@
     "type": "minecraft:random_spread",
     "salt": 30084232,
     "separation": 4,
-    "spacing": 27
+    "spacing": 18
   },
   "structures": [
-    {"structure": "minecraft:bastion_remnant", "weight": 3}
+    { "structure": "minecraft:fortress", "weight": 2 },
+    { "structure": "minecraft:bastion_remnant", "weight": 3 }
   ]
 }
