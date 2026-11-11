@@ -4,11 +4,11 @@ This pack targets Java 26.3 (data pack format 121.0). Install the folder contain
 
 ## Overworld
 
-- The cavern floor remains plains-like but now has more noticeable, broad rolling rises and dips, using low-frequency noise plus continental/erosion variation (with a stronger broad height variation (up to about 10 blocks either side of the center)). Aquifer exclusion follows the same floor shape; the floor is intended to stay above the usual Y=-54 lava layer.
+- The cavern floor uses a plains-like profile centered near Y=-46, with smooth height variation capped at about 3 blocks above or below the center. Aquifer exclusion follows the same floor shape; the floor is intended to stay above the usual Y=-54 lava layer.
 - The cavern roof boundary is centered near Y=15, with broad terrain-noise variation targeting roughly Y=9–21 rather than a flat cutoff.
 - Aquifer exclusion follows the same irregular floor and roof boundaries and is positive only inside the intended cavern volume.
-- Low-frequency 2D noise creates irregular vertical cave-wall sheets that extend through the cavern height, intended to divide the space into large chambers instead of forming floating oval blobs.
-- A separate broad, low-frequency mask creates large irregular raised plateaus, approximately 20 blocks above the floor, with wider footprints and uneven edges.
+- Thin, winding 2D noise contours create vertical cave-wall sheets rather than oval columns. Their lower edges vary around Y=-10 and their upper edges around Y=12, giving both ends a curved, uneven outline while leaving the lower Ancient City band clear.
+- A sparse broad mask creates raised cliff-like plateaus with irregular edges and uneven tops, roughly 11–15 blocks above the rolling floor.
 - The 26.3 beardifier is applied once at the final density root so structure terrain adaptation also affects the custom cavern branch.
 - Ancient Cities use 12-chunk placement spacing, are allowed in Overworld biomes, and start at Y=-27. Their structure definition follows the Java 26.3 vanilla schema (no unsupported `dimension_padding` field).
 - Trial Chambers use the same 12-chunk spacing, 1-chunk separation, and Overworld biome eligibility as Ancient Cities. Their full vanilla pool aliases and other structure settings are retained; their start-height range is raised to Y=-30 through -18, with 16-block dimension padding.
