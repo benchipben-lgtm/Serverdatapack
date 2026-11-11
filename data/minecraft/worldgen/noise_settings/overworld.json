@@ -71,7 +71,7 @@
       "xz_scale": 1,
       "y_scale": 1
     },
-    "surface_level": "minecraft:overworld/preliminary_surface_level"
+    "surface_level": "minecraft:overworld/chunk_surface_level"
   },
   "debug_functions": [
     {
@@ -125,8 +125,8 @@
       "label": "PV"
     },
     {
-      "function": "minecraft:overworld/preliminary_surface_level",
-      "label": "PS"
+      "function": "minecraft:overworld/chunk_surface_level",
+      "label": "CSL"
     }
   ],
   "default_block": "minecraft:stone",
