@@ -450,5 +450,6 @@
         "offset": 0
       }
     }
-  ]
+  ],
+  "preset": "minecraft:overworld"
 }
